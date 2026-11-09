@@ -1,0 +1,69 @@
+
+.app-container {
+  min-height: 100vh;
+  padding: 35px 5%;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 35px;
+  padding: 30px 15px;
+  background: linear-gradient(135deg, #635bdb, #9285e8);
+  color: white;
+  border-radius: 16px;
+}
+
+.app-header h1 {
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+
+.app-header p {
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+.app-content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+  max-width: 1250px;
+  margin: auto;
+  align-items: stretch;
+}
+
+.app-section {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+  min-width: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .app-content {
+    grid-template-columns: 1fr;
+    max-width: 650px;
+  }
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    padding: 15px;
+  }
+
+  .app-header {
+    padding: 25px 12px;
+    margin-bottom: 20px;
+  }
+
+  .app-header h1 {
+    font-size: 25px;
+  }
+
+  .app-section {
+    padding: 17px;
+  }
+}

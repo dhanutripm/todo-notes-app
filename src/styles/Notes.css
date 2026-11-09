@@ -1,0 +1,154 @@
+
+.notes-container {
+  width: 100%;
+}
+
+.notes-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.note-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.note-form input,
+.note-form textarea,
+.note-form select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+.note-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.note-form button {
+  padding: 12px;
+  background: #e58b43;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.note-form button:hover {
+  background: #c96d2c;
+}
+
+.note-search {
+  margin-bottom: 15px;
+}
+
+.note-search input {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.note-filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.note-filters button {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  background: white;
+  cursor: pointer;
+}
+
+.note-filters button.active {
+  background: #e58b43;
+  color: white;
+  border-color: #e58b43;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.note-card {
+  padding: 15px;
+  background: #fffaf2;
+  border: 1px solid #f0e4d2;
+  border-radius: 9px;
+  overflow-wrap: anywhere;
+}
+
+.note-card h3 {
+  margin-bottom: 9px;
+  font-size: 16px;
+}
+
+.note-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  margin-bottom: 12px;
+}
+
+.note-category {
+  display: inline-block;
+  padding: 5px 9px;
+  background: #fce5cd;
+  color: #95551e;
+  border-radius: 15px;
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+
+.note-time {
+  font-size: 11px;
+  color: #888;
+  margin-bottom: 12px;
+}
+
+.note-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.note-actions button {
+  padding: 7px 11px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.note-edit {
+  background: #e8e7ff;
+  color: #5147bb;
+}
+
+.note-delete {
+  background: #ffe6e6;
+  color: #d32f2f;
+}
+
+.no-notes {
+  text-align: center;
+  color: #888;
+  padding: 25px 5px;
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 600px) {
+  .notes-grid {
+    grid-template-columns: 1fr;
+  }
+}
